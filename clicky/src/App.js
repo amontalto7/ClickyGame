@@ -1,28 +1,38 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Wrapper from "./components/Wrapper";
+import GameCard from "./components/GameCard";
+import Title from "./components/Title";
+import Jumbotron from "react-bootstrap/Jumbotron";
+import Button from "react-bootstrap/Button";
 
-class App extends Component {
-  render() {
+function App() {
+ 
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+      <Wrapper>
+        <Title>Clicky Game</Title>
+        <Jumbotron>
+          <h1>Hello, world!</h1>
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            This is a simple hero unit, a simple jumbotron-style component for calling
+            extra attention to featured content or information.
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+          <GameCard
+            name = {"Anthony"}
+            occupation = {"Dev"}
+            location = {"NYC"}
+            image = {"https://amontalto7.github.io/assets/images/profilepic.jpg"}
+
+            />
+          <p>
+            <Button variant="primary">Learn more</Button>
+          </p>
+        </Jumbotron>;
+      </Wrapper>
+
+      );
+  
 }
 
 export default App;
