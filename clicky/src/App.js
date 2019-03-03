@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-// import "./App.css";
+import "./App.css";
 import Wrapper from "./components/Wrapper";
-import GameCard from "./components/GameCard";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Button from "react-bootstrap/Button";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import pics from "./cards.json";
+import GameArea from "./components/GameArea"
 
 function App() {
   return (
@@ -26,14 +25,14 @@ function App() {
           Click on an image to earn points, but don't click on any more than
           once!
         </p>
-        {pics.map(item => (
-          <GameCard image={item.image} id={item.id} />
-        ))}
-
         <p>
           <Button variant="primary">Learn more</Button>
         </p>
       </Jumbotron>
+      <div>
+          <GameArea/>
+      </div>
+
       ;
     </Wrapper>
   );
