@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "image": "https://imgix.ranker.com/user_node_img/4269/85371973/original/rick-sanchez-u2?w=120&h=120&q=60&fm=pjpg&fit=crop&crop=faces",
+    "clicked": false
+  },
+  {
+    "id": 2,
+    "image": "https://imgix.ranker.com/user_node_img/4269/85371974/original/morty-smith-u2?w=120&h=120&q=60&fm=pjpg&fit=crop&crop=faces",
+    "clicked": false
+  },
+  {
+    "id": 3,
+    "image": "https://imgix.ranker.com/user_node_img/4269/85371983/original/pickle-rick-u2?w=120&h=120&q=60&fm=pjpg&fit=crop&crop=faces",
+    "clicked": false
+  },
+  {
+    "id": 4,
+    "image": "https://imgix.ranker.com/user_node_img/4269/85371976/original/mr-poopybutthole-u2?w=87&h=87&fit=crop&crop=faces&q=60&fm=pjpg",
+    "clicked": false
+  },
+  {
+    "id": 5,
+    "image": "https://imgix.ranker.com/user_node_img/4269/85371975/original/mr-meeseeks-u2?w=87&h=87&fit=crop&crop=faces&q=60&fm=pjpg",
+    "clicked": false
+  },
+  {
+    "id": 6,
+    "image": "https://imgix.ranker.com/user_node_img/50082/1001634648/original/evil-morty-photo-u1?w=87&h=87&fit=crop&crop=faces&q=60&fm=pjpg",
+    "clicked": false
+  },
+  {
+    "id": 7,
+    "image": "https://imgix.ranker.com/user_node_img/4269/85371978/original/scary-terry-u2?w=87&h=87&fit=crop&crop=faces&q=60&fm=pjpg",
+    "clicked": false
+  },
+  {
+    "id": 8,
+    "image": "https://imgix.ranker.com/user_node_img/4269/85371980/original/squanchy-u2?w=120&h=120&q=60&fm=pjpg&fit=crop&crop=faces",
+    "clicked": false
+  },
+  {
+    "id": 9,
+    "image": "https://imgix.ranker.com/user_node_img/4269/85371977/original/birdperson-u2?w=87&h=87&fit=crop&crop=faces&q=60&fm=pjpg",
+    "clicked": false
+  },
+  {
+    "id": 10,
+    "image": "https://imgix.ranker.com/user_node_img/4269/85371981/original/summer-smith-u2?w=87&h=87&fit=crop&crop=faces&q=60&fm=pjpg",
+    "clicked": false
+  },
+  {
+    "id": 11,
+    "image": "https://imgix.ranker.com/user_node_img/4269/85371982/original/snuffles-u2?w=87&h=87&fit=crop&crop=faces&q=60&fm=pjpg",
+    "clicked": false
+  },
+  {
+    "id": 12,
+    "image": "https://imgix.ranker.com/user_node_img/4269/85371985/original/beth-smith-u2?w=87&h=87&fit=crop&crop=faces&q=60&fm=pjpg",
+    "clicked": false
+  }
+]

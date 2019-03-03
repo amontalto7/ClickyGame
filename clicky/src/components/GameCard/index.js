@@ -2,32 +2,19 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 // import "./style.css";
 
-function FriendCard(props) {
+function GameCard(props) {
   console.log(props);
 
   return (
-    <Card>
-      <div className="img-container">
-        <img
-          alt="SpongeBob"
-          src={props.image}
-        />
-      </div>
-      <div className="content">
-        <ul>
-          <li>
-            <strong>Name:</strong> {props.name}
-          </li>
-          <li>
-            <strong>Occupation:</strong> {props.occupation}
-          </li>
-          <li>
-            <strong>Location:</strong> {props.location}
-          </li>
-        </ul>
-      </div>
-      </Card>
+    <Card className="bg-dark text-white" style={{ width: '10rem'}}>
+    <Card.Img src={props.image} alt={props.id} />
+    <Card.ImgOverlay>
+      <Card.Text>
+        Card {props.id}
+      </Card.Text>
+    </Card.ImgOverlay>
+    </Card>
   );
 }
 
-export default FriendCard;
+export default GameCard;

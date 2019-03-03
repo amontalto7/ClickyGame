@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Wrapper from "./components/Wrapper";
 import GameCard from "./components/GameCard";
 import Title from "./components/Title";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Button from "react-bootstrap/Button";
+import pics from "./cards.json"
 
 function App() {
  
@@ -13,17 +13,13 @@ function App() {
       <Wrapper>
         <Title>Clicky Game</Title>
         <Jumbotron>
-          <h1>Hello, world!</h1>
+          <h1>Clicky Game!</h1>
           <p>
-            This is a simple hero unit, a simple jumbotron-style component for calling
-            extra attention to featured content or information.
+            Click on an image to earn points, but don't click on any more than once!
           </p>
           <GameCard
-            name = {"Anthony"}
-            occupation = {"Dev"}
-            location = {"NYC"}
-            image = {"https://amontalto7.github.io/assets/images/profilepic.jpg"}
-
+            image = {pics[2].image}
+            id = {pics[2].id}
             />
           <p>
             <Button variant="primary">Learn more</Button>
