@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 import Wrapper from "./components/Wrapper";
 import Jumbotron from "react-bootstrap/Jumbotron";
@@ -9,7 +9,7 @@ import GameArea from "./components/GameArea"
 
 function App() {
   return (
-    <Wrapper>
+    <div>
       <Navbar bg="dark" variant="dark">
         <Navbar.Brand href="#home">Clicky Game</Navbar.Brand>
         <Nav className="mr-auto">
@@ -19,6 +19,7 @@ function App() {
           <Nav.Link>Score: 0</Nav.Link> |<Nav.Link>Top Score: 0</Nav.Link>
         </Nav>
       </Navbar>
+      
       <Jumbotron>
         <h1>Clicky Game!</h1>
         <p>
@@ -29,12 +30,14 @@ function App() {
           <Button variant="primary">Learn more</Button>
         </p>
       </Jumbotron>
+      <Wrapper>
       <div>
           <GameArea/>
       </div>
 
       ;
     </Wrapper>
+    </div>
   );
 }
 

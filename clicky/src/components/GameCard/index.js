@@ -6,7 +6,7 @@ function GameCard(props) {
   console.log(props);
 
   return (
-    <Card className="bg-dark text-white" style={{ width: '10rem'}}>
+    <Card className="bg-dark text-white shadow m-2" style={{ width: '10rem'}}>
     <Card.Img src={props.image} alt={props.id} />
     <Card.ImgOverlay>
       <Card.Text>
