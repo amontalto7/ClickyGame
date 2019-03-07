@@ -3,23 +3,14 @@ import "./App.css";
 import Wrapper from "./components/Wrapper";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Button from "react-bootstrap/Button";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import GameArea from "./components/GameArea"
+import GameArea from "./components/GameArea";
+import TopNav from "./components/TopNav";
+
 
 function App() {
   return (
     <div>
-      <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="#home">Clicky Game</Navbar.Brand>
-        <Nav className="mr-auto">
-          <Nav.Link>Click an image to begin!</Nav.Link>
-        </Nav>
-        <Nav className="mr-auto">
-          <Nav.Link>Score: 0</Nav.Link> |<Nav.Link>Top Score: 0</Nav.Link>
-        </Nav>
-      </Navbar>
-      
+      <TopNav />
       <Jumbotron>
         <h1>Clicky Game!</h1>
         <p>
