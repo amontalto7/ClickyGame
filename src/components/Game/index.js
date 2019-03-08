@@ -20,13 +20,30 @@ class Game extends Component {
   }
 
   resetData = data => {
-    // spread syntax
+    // spread syntax ...
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
     // set everything back to clicked : false
-    const resetData = data.map(item => ({ ... item, clicked: false }));
+    const resetData = data.map(item => ({ ...item, clicked: false }));
     return this.shuffleCards(resetData);
   }
 
+  handleCorrect = newData => {
+    const {topScore, score} = this.state;
+    const newScore = score + 1;
+    const newTopScore = newScore > topScore ? newScore : topScore;
+    this.setState({
+      data: this.shuffleCards(newData),
+      score: newScore,
+      topScore: newTopScore
+    });
+  };
+
+  handleWrongGuess = data => {
+    this.setState({
+      data: this.resetData(data),
+      score: 0
+    });
+  };
 
   // shuffle cards by randomly generating new indexes for each element and replacing the original set
   shuffleCards = data => {
@@ -40,6 +57,21 @@ class Game extends Component {
     }
     return data;
   };
+
+  handleClick = id => {
+    let guessedCorrectly = false;
+    const newData = this.state.data.map(item => {
+      const newItem = { ...item};
+      if (newItem.id === id) {
+        if (!newItem.clicked) {
+          newItem.clicked = true;
+          guessedCorrectly = true;
+        }
+    }
+    return newItem;
+    });
+    guessedCorrectly ? this.handleCorrect(newData) : this.handleWrongGuess(newData);
+  }
 
 render() {
   return (
@@ -58,8 +90,12 @@ render() {
       <Wrapper>
       
       <div className = "gameArea">
-    {data.map(item => (
-        <GameCard key={item.id} image={item.image} id={item.id} />
+    {this.state.data.map(item => (
+        <GameCard 
+          key={item.id} 
+          image={item.image} 
+          id={item.id}
+          handleClick={this.handleClick} />
       ))}
     </div>      
 
