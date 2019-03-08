@@ -32,3 +32,12 @@
 .card > .content > ul > li {
   margin-top: 18px;
 }
+
+.card-img-overlay:hover {
+  box-shadow: 0 2px 4px 0 lightgray, 0 3px 10px 0;
+}
+
+.card-img-overlay:active {
+  box-shadow: 0 1px 2px 0 darkgray, 0 2px 5px 0;
+  transform: translateY(4px);
+}
