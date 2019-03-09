@@ -3,9 +3,8 @@ import "./style.css";
 import GameCard from "../GameCard";
 import data from "../../data.json"
 import Wrapper from "../Wrapper";
-import Jumbotron from "react-bootstrap/Jumbotron";
-import Button from "react-bootstrap/Button";
 import TopNav from "../TopNav";
+import JumbotronInstructions from "../JumbotronInstructions";
 
 class Game extends Component {
 
@@ -76,19 +75,9 @@ class Game extends Component {
 render() {
   return (
     <div>
-      <TopNav />
-      <Jumbotron>
-        <h1>Clicky Game!</h1>
-        <p>
-          Click on an image to earn points, but don't click on any more than
-          once!
-        </p>
-        <p>
-          <Button variant="primary">Learn more</Button>
-        </p>
-      </Jumbotron>
+      <TopNav score = {this.state.score} topScore = {this.state.topScore}/>
       <Wrapper>
-      
+      <JumbotronInstructions/>
       <div className = "gameArea">
     {this.state.data.map(item => (
         <GameCard 

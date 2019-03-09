@@ -11,9 +11,9 @@ const GameCard = props =>
       onClick = {() => props.handleClick(props.id)}>
     <Card.Img src={props.image} alt={props.id} />
     <Card.ImgOverlay>
-      <Card.Text>
+      {/* <Card.Text>
         Card {props.id}
-      </Card.Text>
+      </Card.Text> */}
     </Card.ImgOverlay>
     </Card>
   );
