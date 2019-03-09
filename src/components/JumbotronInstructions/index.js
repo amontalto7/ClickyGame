@@ -5,7 +5,7 @@ import "./style.css";
 function JumbotronInstructions() {
     return (
         <Jumbotron>
-        <h1>Clicky Game!</h1>
+        <h2>Clicky Game!</h2>
         <p>
           Click on an image to earn points, but don't click on any more than
           once!
