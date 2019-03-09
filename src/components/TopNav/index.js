@@ -13,8 +13,7 @@ const TopNav = props => (
 
       </Nav>
       <Nav className="mr-auto scoreArea">
-
-        <li>Score: {props.score} | Top Score: {props.topScore}</li>
+        Score: {props.score} <br/> Top Score: {props.topScore}
       </Nav>
     </Navbar>
   );
